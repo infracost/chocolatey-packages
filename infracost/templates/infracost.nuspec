@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+	<metadata>
+		<id>infracost</id>
+		<version>{PLACEHOLDER_VERSION}</version>
+		<packageSourceUrl>https://github.com/infracost/chocolatey-packages</packageSourceUrl>
+		<owners>infracost</owners>
+		<title>Infracost - Love your cloud bill</title>
+		<authors>Infracost</authors>
+		<projectUrl>https://infracost.io</projectUrl>
+		<iconUrl>https://rawcdn.githack.com/infracost/chocolatey-packages/master/media/icon.png</iconUrl>
+		<licenseUrl>https://github.com/infracost/infracost/blob/master/LICENSE</licenseUrl>
+		<projectSourceUrl>https://github.com/infracost/infracost</projectSourceUrl>
+		<docsUrl>https://infracost.io/docs/</docsUrl>
+		<bugTrackerUrl>https://github.com/infracost/infracost/issues</bugTrackerUrl>
+    <tags>infracost cloud infrastructure-as-code terraform iac azure aws cost cost-estimate</tags>
+		<summary>See cloud cost estimates for Terraform in pull requests.</summary>
+		<description>
+			Infracost shows cloud cost estimates for Terraform. It enables DevOps, SRE and engineers to see a cost breakdown and understand costs before making changes, either in the terminal or pull requests. This provides your team with a safety net as people can discuss costs as part of the workflow.
+		</description>
+		<releaseNotes>https://github.com/infracost/infracost/releases</releaseNotes>
+	</metadata>
+	<files>
+		<file src="tools\**" target="tools" />
+	</files>
+</package>

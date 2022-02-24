@@ -1,2 +1,3 @@
-# chocolatey-packages
-Chocolatey definition files for infracost
+# Chocolatey Packages
+
+Chocolatey definition files for infracost.
