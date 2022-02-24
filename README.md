@@ -6,13 +6,15 @@ Chocolatey definition files for infracost.
 
 ## Getting started
 
-To install the Infracost CLI through chocolatey simply run:
+1. To install the Infracost CLI through chocolatey on Windows simply run:
 
 ```bash
 choco install infracost
 ```
 
-You can visit our community package page [here](https://community.chocolatey.org/packages/infracost)
+We update the [chocolatey package](https://community.chocolatey.org/packages/infracost) with new [releases](https://github.com/infracost/infracost/releases) regularly.
+
+2. Follow the rest of our [Quick Start guide](https://www.infracost.io/docs/).
 
 ## Contributing
 
