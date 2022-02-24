@@ -45,4 +45,4 @@ Write-Host "$(get-date) - Test install of infracost passed --version check: $($o
 
 Get-ChildItem *.nupkg
 Write-Host "$(get-date) - Pushing to Chocolatey"
-choco push infracost -s https://push.chocolatey.org/ --api-key=$env:CHOCO_API_KEY
+choco push -s https://push.chocolatey.org/ --api-key=$env:CHOCO_API_KEY
