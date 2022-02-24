@@ -6,7 +6,7 @@
 		<version>{PLACEHOLDER_VERSION}</version>
 		<packageSourceUrl>https://github.com/infracost/chocolatey-packages</packageSourceUrl>
 		<owners>infracost</owners>
-		<title>Infracost - Love your cloud bill</title>
+		<title>Infracost</title>
 		<authors>Infracost</authors>
 		<projectUrl>https://infracost.io</projectUrl>
 		<iconUrl>https://rawcdn.githack.com/infracost/chocolatey-packages/master/media/icon.png</iconUrl>
