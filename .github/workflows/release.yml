@@ -14,3 +14,13 @@ jobs:
         run: infracost/build.ps1
         env:
           CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+
+  build-v1:
+    name: Release Infracost CLI v1 choco
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate & push
+        run: infracost1/build.ps1
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
