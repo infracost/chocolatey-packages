@@ -2,11 +2,10 @@
 
 $version = (Invoke-Webrequest https://api.github.com/repos/infracost/cli/releases/latest | convertfrom-json).name
 
-# strip the leading v; the bare version is used as the chocolatey package
-# version and is also embedded in the v2 asset filename
+# strip the leading v; the bare version is used as the chocolatey package version
 $bareVersion = $version.Substring(1, ($version.Length-1))
 
-$zip = "infracost_$($bareVersion)_windows_amd64.zip"
+$zip = "infracost-windows-amd64.zip"
 
 Write-Host "$(get-date) - downloading release $version"
 Invoke-WebRequest -uri "https://github.com/infracost/cli/releases/download/$($version)/$($zip)" -OutFile $zip
