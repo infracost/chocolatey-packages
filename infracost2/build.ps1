@@ -30,8 +30,8 @@ Write-Host "$(get-date) - Testing choco pkg is valid"
 choco install infracost2 -dv -s .
 
 $out = (infracost --version)
-if ("Infracost $($version)" -ne $out) {
-  Write-Host "infracost output: $($out) from choco dry run install did not match expected: 'Infracost $($version)'"
+if ("infracost version $($bareVersion)" -ne $out) {
+  Write-Host "infracost output: $($out) from choco dry run install did not match expected: 'infracost version $($bareVersion)'"
   exit 1
 }
 
