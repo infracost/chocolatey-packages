@@ -6,6 +6,16 @@ on:
 
 jobs:
   build:
+    name: Release Infracost choco
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Generate & push
+        run: infracost/build.ps1
+        env:
+          CHOCO_API_KEY: ${{ secrets.CHOCO_API_KEY }}
+
+  build-v2:
     name: Release Infracost CLI v2 choco
     runs-on: windows-latest
     steps:
