@@ -1,6 +1,6 @@
 $ErrorActionPreference = 'Stop'
 
-$url64 = "https://github.com/infracost/infracost/releases/download/{PLACEHOLDER_VERSION}/infracost-windows-amd64.zip"
+$url64 = "https://github.com/infracost/cli/releases/download/v{PLACEHOLDER_VERSION}/infracost-windows-amd64.zip"
 $unzipLocation = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageParams = @{
